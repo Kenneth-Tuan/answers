@@ -1,6 +1,6 @@
 # 宜眾數數發Vue考題
 1.	Simply to write down differences between one-way data flow and two-way data binding?
-  A：
+
     React’s one-way data flow (also called one-way binding) keeps everything modular and fast.
     Data binding 指的是資料端與 UI 端之間會透過事件的綁定，當某一端有異動時，另一端可以進行更新
     One way data flow/one way data binding 指的是兩種資料流向，有以下兩種情況：
@@ -90,6 +90,3 @@ console.log(setName) var setName = ‘local’ console.log(setName)
 }
 
 // => undefined local
-#� �a�n�s�w�e�r�s�
-�
-�
