@@ -1,5 +1,4 @@
 # 宜眾數數發Vue考題
-### adsf
 1.	Simply to write down differences between one-way data flow and two-way data binding?
   A：
     React’s one-way data flow (also called one-way binding) keeps everything modular and fast.
