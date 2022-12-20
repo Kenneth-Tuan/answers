@@ -7,7 +7,7 @@
     >-  從 UI 端出發，UI 一有異動，就通知資料端更新
 
 2.	What is the different between computed, watch and method?
->computed 必須回傳一個值，並且會把它緩存起來，當函式裏的依賴改變時，才會重新執行和求值。
+    >computed 必須回傳一個值，並且會把它緩存起來，當函式裏的依賴改變時，才會重新執行和求值。
 
     >watch 與 methods 不會強制要求回傳一個值，它們只需執行動作，不一定要回傳值。
 
@@ -74,7 +74,7 @@ function c(){ console.log(‘c’) }
 function d(){ console.log(‘d’) }
 function e(){ console.log(‘e’) }
 ```
-> a e c b d
+    > a e c b d
 
 9.	Implementing let summary = sum(1)(2)(3), console.log(summary).
 // Expected summary is 6
@@ -99,4 +99,4 @@ function test() {
   console.log(setName)
 }
 ```
->// => undefined local
+    >// => undefined local
