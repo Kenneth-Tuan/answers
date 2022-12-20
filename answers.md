@@ -57,46 +57,46 @@
 
 7.	What is different between framework base website and normal website (none framework)
     >1. 方便開發
-    2. 資料與UI分離
+    >2. 資料與UI分離
 
 8.	
-```
-setTimeout(b, 100)
-setTimeout(d(), 1000)
-a(c)
-var delay = 0
-for(let i=100000; i--;) delay++
-e()
-function a(cb){ console.log(‘a’) setTimeout(cb, 0)
-}
-function b(){ console.log(‘b’) }
-function c(){ console.log(‘c’) }
-function d(){ console.log(‘d’) }
-function e(){ console.log(‘e’) }
-```
+    ```
+    setTimeout(b, 100)
+    setTimeout(d(), 1000)
+    a(c)
+    var delay = 0
+    for(let i=100000; i--;) delay++
+    e()
+    function a(cb){ console.log(‘a’) setTimeout(cb, 0)
+    }
+    function b(){ console.log(‘b’) }
+    function c(){ console.log(‘c’) }
+    function d(){ console.log(‘d’) }
+    function e(){ console.log(‘e’) }
+    ```
     > a e c b d
 
 9.	Implementing let summary = sum(1)(2)(3), console.log(summary).
 // Expected summary is 6
-```
-let sum = function (a) {
-  return function (b) {
-    return function (c) {
-      return a+b+c;
+    ```
+    let sum = function (a) {
+      return function (b) {
+        return function (c) {
+          return a+b+c;
+        }
+      }
     }
-  }
-}
-let summary = sum(1)(2)(3)
-console.log（summary） // => 6
-```
+    let summary = sum(1)(2)(3)
+    console.log（summary） // => 6
+    ```
 
 10.	What is the result of the console log out?
-```
-setName = ‘global’ 
-function test() {
-  console.log(setName) 
-  var setName = ‘local’ 
-  console.log(setName)
-}
-```
+    ```
+    setName = ‘global’ 
+    function test() {
+      console.log(setName) 
+      var setName = ‘local’ 
+      console.log(setName)
+    }
+    ```
     >// => undefined local
